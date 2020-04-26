@@ -2,6 +2,10 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+.color-dark-blue{
+    color:#273555 ;
+}
+
 .navbar-nav li{
     margin-right: 3px;
     margin-left: 3px;
@@ -23,7 +27,7 @@ body{
     padding-bottom: 30px;
     padding-left: 60px;
     padding-right: 40px;
-    background-color: #FBF8F6;
+    background-color: #f9f3f0;
 }
 
 .jumbotron h2{
@@ -37,10 +41,22 @@ body{
 
 /* jumbotron video (right side) */
 .container-video{
-    background-color: rgb(59, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/video_thumbnail.jpg);
+    background-position: center;
+    background-size: cover;
     height: 350px;
     width: 300px;
+    cursor: pointer;
     border-radius: 25px;
+}
+
+
+.container-video:hover{
+    transition: .5s;
+    opacity: .7;
 }
 
 /* endof jumbotron */
@@ -49,7 +65,7 @@ body{
 .nav-form-search{
     position: relative;
     width: 20vw !important;
-    background-color: #FBF8F6 !important;
+    background-color: #f9f3f0 !important;
     border : none;
     padding-right: 40px !important;
 }
@@ -164,13 +180,67 @@ body{
 
 /* popular item styling */
 .item-popular{
-    min-width: 250px;
-    height: 300px;
-    background-color: darkcyan;
+    overflow: hidden;
+    min-width: 270px;
+    max-width: 270px;
+    height: 325px;
+    background-color: #dbd2d2   ;
+    border-radius: 10px;
     margin : 20px 10px 20px 10px;
-    -webkit-box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
-    -moz-box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
-    box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 0px 0px 24px -10px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 24px -10px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 24px -10px rgba(0,0,0,0.7);
+}
+
+/* item popular image */
+.image-item-popular{
+    height: 175px;
+    background: url(../img/teacher.jpg);
+    background-size: cover;
+}
+
+/* description item popular */
+.description-item-popular{
+    padding: 15px;
+    background-color: #ffffff;
+    height: 150px;
+}
+
+/* item popular course group */
+.item-popular-course{
+    font-size: 8pt;
+}
+
+/* item popular title */
+.item-popular-title{
+    font-size: 12pt;
+    transform: translateY(-15px);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* item popular author */
+.item-popular-author{
+    font-size: 8pt;
+}
+
+/* bottom section item popular */
+.item-popular-bottom{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-15px);
+}
+
+.item-popular-bottom p{
+    font-size: 10pt;
+    margin-right: 30px;
+}
+
+.item-popular-bottom span{
+    font-size: 12pt;
+    margin-right: 5px;
+    color: rgb(255, 187, 0);
+    transform: translateY(3px);
 }
 
 /* section services */
@@ -209,19 +279,27 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     min-width: 250px;
-    min-height: 300px;
-    background-color: violet;
+    max-width: 250px;
+    min-height: 350px;
+    max-height: 350px;
+    background-color: #f4edea;
     border-radius: 15px;
-    padding: 20px;
+    padding: 40px;
+}
+
+/* bg cyan */
+.bg-cyan{
+    background-color: #e6f9f7;
 }
 
 /* section join container */
 #join-container{
     padding-top: 60px;
     padding-bottom: 60px;
+    height: 300px;
     display: grid;
     justify-items: center;
-    background-color: #FBF8F6;
+    background-color: #f9f3f0;
     border-radius: 20px;
 }
 
@@ -233,6 +311,7 @@ body{
 /* button create account */
 #btn-create-account{
     width: 200px;
+    max-height: 60px;
     padding: 10px 5px 10px 5px;
     border: none;
     border-radius: 20px;
@@ -287,10 +366,38 @@ body{
 
 /* item testimonial */
 .item-testimonial{
-    min-width: 400px;
+    padding: 20px;
+    min-width: 450px;
+    max-width: 450px;
     height: 250px;
     margin: 15px 10px 5px 15px;
-    background-color: violet;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
+    -moz-box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
+    box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
+}
+
+.nama-testimoni{
+    font-size: 16pt;
+    margin-top: 5px;
+}
+
+.jabatan-testimoni{
+    font-size: 16pt;
+    transform: translateY(-15px);
+}
+
+/* image user testimonial */
+.img-user{
+    width: 70px;
+    background-color: ivory;
+}
+
+/* testimonial content */
+.item-testimonial-content{
+    font-size: 14pt;
+    transform: translateY(-10px);
 }
 
 /* section waqf */
@@ -318,7 +425,9 @@ body{
     padding: 5px 15px 5px 15px;
     background-color: #fd1267;
     margin-top: 10px;
+    cursor: pointer;
 }
+
 
 /* footer */
 footer{
@@ -329,6 +438,41 @@ footer span{
     margin-right: 10px;
     transform: translateY(5px);
 }
+
+/* Button subscribe */
+#btn-subscribe{
+    width: 100px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d5f4f2;
+    color: #238780;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* button create account on clicked*/
+#btn-subscribe:focus{
+    outline: none !important;
+}
+
+/* button create account on mouse hover*/
+#btn-subscribe:hover{
+    background-color: #8ee1db;
+    transition: .5s;
+    color: white;
+}
+
+/* list footer style */
+.list-unstyled li a{
+    color: grey;
+}
+
+.list-unstyled li{
+   margin-top: 5px;
+}
+
 
 /* for responsive web purpose */
 @media only screen and (max-width: 450px) {
