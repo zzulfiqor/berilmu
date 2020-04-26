@@ -1,0 +1,338 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-nav li{
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+/* Navbar btn signup */
+.btn-signup{
+    margin: 0 5px 0 5px;
+    background-color: #e4f4f3;
+    border-radius: 20px;
+    color: #61c4be !important;
+}
+
+
+/* jumbotron */
+.jumbotron{
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 40px;
+    background-color: #FBF8F6;
+}
+
+.jumbotron h2{
+    font-weight: 900;
+    color: #273555;
+}
+
+.jumbotron h3{
+    color: #aeaeae;
+}
+
+/* jumbotron video (right side) */
+.container-video{
+    background-color: rgb(59, 59, 59);
+    height: 350px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+/* endof jumbotron */
+
+/* Nav Form Search */
+.nav-form-search{
+    position: relative;
+    width: 20vw !important;
+    background-color: #FBF8F6 !important;
+    border : none;
+    padding-right: 40px !important;
+}
+
+::-webkit-input-placeholder{
+    color: #bfbfbf !important;
+}
+
+/* Search form */
+.form-search{
+    border-radius: 20px 0 20px 20px;
+    border: none;
+    height: 50px;
+    width: 25vw !important;
+}
+
+/* Nav Button Search */
+.icon-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #bfbfbf;
+}
+
+/* Button Search */
+.btn-search{
+    border: none;
+    width: 50px;
+    background-color: #fd1267;
+    color: white;
+    border-radius: 0 20px 20px 0px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+/* text-section */
+.text-section{
+    color: #273555;
+    cursor: pointer;
+}
+
+/* add pseudo elements down arrow */
+.text-section::after{
+    display: inline-block;
+    content: url('../img/keyboard_arrow_down-black-18dp.svg');
+    transform: translateY(3px);
+}
+
+/* button more */
+.btn-more{
+    border: 1.5px solid #afeae6;
+    color: #afeae6;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    transform: translateY(-5px);
+    transition: .50s;
+}
+
+/* button more on mouse hover */
+.btn-more:hover{
+    color: white;
+    background-color: #afeae6;
+}
+
+/* button more on clicked */
+.btn-more:focus{
+    outline: 0 !important;
+}
+
+/* popular course main title */
+#popular-course-main-title{
+    color: #273555;
+    font-weight: bold;
+}
+
+/* popular course subtitle */
+#popular-course-subtitle{
+    color: #888888;
+    font-size: larger;
+}
+
+/* item popular course */
+.item-popular-container{
+    overflow: auto;
+    display: flex;
+}
+
+/* height of scrollbar */
+.item-popular-container::-webkit-scrollbar{
+    height: 4px;
+}
+
+/* scrollbar style */
+.item-popular-container::-webkit-scrollbar-track{
+    height: 5px;
+    background: #f3ebe4;
+}
+
+/* scrollbar thumb style */
+.item-popular-container::-webkit-scrollbar-thumb{
+    background: #fd1267;
+    border-radius: 5px;
+}
+
+/* scrollbar thumb style when mouse hover */
+.item-popular-container::-webkit-scrollbar-thumb:hover{
+    background: #fd1267;
+    transition: .9s;
+}
+
+/* popular item styling */
+.item-popular{
+    min-width: 250px;
+    height: 300px;
+    background-color: darkcyan;
+    margin : 20px 10px 20px 10px;
+    -webkit-box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
+    -moz-box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
+    box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
+}
+
+/* section services */
+#section-services{
+    background-color: white;
+}
+
+/* title service */
+#title-service{
+    font-weight: bolder;
+    color: #273555;
+}
+
+/* subtitle service styling */
+#subtitle-service{
+    font-size: 19pt;
+    font-weight: 400;
+    color: #273555;
+    line-height: 30px;
+}
+
+/* text section */
+#text-section{
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+/* item service container styling */
+.container-item-service{
+    display: flex;
+    justify-content: center;
+}
+
+/* item services styling */
+.item-services{
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 250px;
+    min-height: 300px;
+    background-color: violet;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* section join container */
+#join-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    justify-items: center;
+    background-color: #FBF8F6;
+    border-radius: 20px;
+}
+
+#join-container h1{
+    font-weight: bolder;
+    color: #273555;
+}
+
+/* button create account */
+#btn-create-account{
+    width: 200px;
+    padding: 10px 5px 10px 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d5f4f2;
+    color: #238780;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* button create account on clicked*/
+#btn-create-account:focus{
+    outline: none !important;
+}
+
+/* button create account on mouse hover*/
+#btn-create-account:hover{
+    background-color: #8ee1db;
+    transition: .5s;
+    color: white;
+}
+
+/* testimonial section */
+#container-testimonial{
+    overflow: auto;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+/* height of scrollbar */
+#container-testimonial::-webkit-scrollbar{
+    height: 4px;
+}
+
+/* scrollbar style */
+#container-testimonial::-webkit-scrollbar-track{
+    height: 5px;
+    background: #f3ebe4;
+}
+
+/* scrollbar thumb style */
+#container-testimonial::-webkit-scrollbar-thumb{
+    background: #fd1267;
+    border-radius: 5px;
+}
+
+/* scrollbar thumb style when mouse hover */
+#container-testimonial::-webkit-scrollbar-thumb:hover{
+    background: #fd1267;
+    transition: .9s;
+}
+
+/* item testimonial */
+.item-testimonial{
+    min-width: 400px;
+    height: 250px;
+    margin: 15px 10px 5px 15px;
+    background-color: violet;
+}
+
+/* section waqf */
+#section-waqf{
+    min-height: 300px;
+    background: url('../img/teacher.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-right: 30px;
+}
+
+#section-waqf h1{
+    font-weight: bolder;
+    color: white;
+}
+
+#section-waqf button{
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 18pt;
+    padding: 5px 15px 5px 15px;
+    background-color: #fd1267;
+    margin-top: 10px;
+}
+
+/* footer */
+footer{
+    padding: 10px 20px 10px 20px;
+}
+
+footer span{
+    margin-right: 10px;
+    transform: translateY(5px);
+}
+
+/* for responsive web purpose */
+@media only screen and (max-width: 450px) {
+    .container-video{
+        visibility: hidden;
+    }
+  }
