@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Fonts Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,14 +20,18 @@
     <!-- landing-page css -->
     <link rel="stylesheet" href="./assets/css/landing_page.css">
 
-    <title>Berilmu</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/png" sizes="16x16">
+
+    <title>Berilmu | 1st Islamic E-Learning Platform</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pt-1">
         <div class="container">
-            <a href="#" class="navbar-brand">Berilmu</a>
+            <a href="#" class="navbar-brand">
+                <img src="./assets/img/logo.png" height="30" alt="">
+            </a>
 
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -82,16 +87,16 @@
     <!-- endof Navbar -->
 
     <!-- Jumbotron -->
-    <div class="container mt-3">
+    <div class="container mt-3 mb-5">
 
-        <div class="jumbotron">
+        <div class="jumbotron jumbotron-main pt-5">
             <div class="row">
                 <!-- Left Side -->
                 <div class="col-8">
-                    <h2 class="display-4">1st Islamic E-Learning Platform</h2>
-                    <h3>Anywhere, Anytime. Enjoy your learning time!</h3>
+                    <p class="">1st Islamic</br> E-Learning Platform</p>
+                    <h4>Anywhere, Anytime. Enjoy your learning time!</h4>
                     <br>
-                    <form class="form-inline">
+                    <form class="form-inline mt-4">
                         <div class="input-group">
                             <input type="text" class="form-control form-search" placeholder="Search anything..."
                                 aria-label="Cari disini..." aria-describedby="basic-addon2">
@@ -108,7 +113,7 @@
                 <!-- right side -->
                 <div class="col-4">
                     <div class="container-video">
-                        <img src="./assets/img/play_circle_outline-white-48dp.svg" alt="" srcset="">
+                        <img src="./assets/img/play_button.png" height="70px" alt="" srcset="">
                     </div>
                 </div>
                 <!-- endof right side -->
@@ -120,7 +125,7 @@
     <!-- endof Jumbotron -->
 
     <!-- section popular courses -->
-    <div class="container mt-5" id="container-popular-course">
+    <div class="container mt-5 mb-5" id="container-popular-course">
         <div class="row justify-content-end">
             <div class="col-4 d-flex justify-content-end align-self-center">
                 <p class="text-section">Applicable Business and Financial</p>
@@ -143,7 +148,7 @@
             <div class="col-8 item-popular-container">
 
                 <div class="item-popular">
-                    <div class="row image-item-popular">
+                    <div class="row image-item-popular bg1">
 
                     </div>
                     <div class="row description-item-popular">
@@ -161,14 +166,14 @@
                 </div>
 
                 <div class="item-popular">
-                    <div class="row image-item-popular">
+                    <div class="row image-item-popular bg2">
 
                     </div>
                     <div class="row description-item-popular">
                         <div class="col">
                             <p class="item-popular-course">Applicable business and financial</p>
-                            <p class="item-popular-title">Sharia Financial Planning</p>
-                            <p class="item-popular-author">Dr. Muhammad Budiman</p>
+                            <p class="item-popular-title">Advertising on social media</p>
+                            <p class="item-popular-author">Achmad Syarief,MSD,PhD</p>
                             <div class="item-popular-bottom">
                                 <p><span class="material-icons">grade</span>4.5</p>
                                 <p><span class="material-icons">thumb_up_alt</span>98%</p>
@@ -180,33 +185,14 @@
 
 
                 <div class="item-popular">
-                    <div class="row image-item-popular">
+                    <div class="row image-item-popular bg3">
 
                     </div>
                     <div class="row description-item-popular">
                         <div class="col">
                             <p class="item-popular-course">Applicable business and financial</p>
-                            <p class="item-popular-title">Sharia Financial Planning</p>
-                            <p class="item-popular-author">Dr. Muhammad Budiman</p>
-                            <div class="item-popular-bottom">
-                                <p><span class="material-icons">grade</span>4.5</p>
-                                <p><span class="material-icons">thumb_up_alt</span>98%</p>
-                                <p><span class="material-icons">record_voice_over</span>4.8/5</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="item-popular">
-                    <div class="row image-item-popular">
-
-                    </div>
-                    <div class="row description-item-popular">
-                        <div class="col">
-                            <p class="item-popular-course">Applicable business and financial</p>
-                            <p class="item-popular-title">Sharia Financial Planning</p>
-                            <p class="item-popular-author">Dr. Muhammad Budiman</p>
+                            <p class="item-popular-title">Business planning and pitching</p>
+                            <p class="item-popular-author">Mufti Menk</p>
                             <div class="item-popular-bottom">
                                 <p><span class="material-icons">grade</span>4.5</p>
                                 <p><span class="material-icons">thumb_up_alt</span>98%</p>
@@ -223,8 +209,8 @@
     <!-- endof section popular courses -->
 
     <!-- students viewing section -->
-    <div class="container mt-3">
-        <div class="jumbotron mt-5">
+    <div class="container mt-5 mb-5">
+        <div class="jumbotron jumbotron-viewing mt-5">
             <div class="row mb-3">
                 <h2>Students are viewing</h2>
             </div>
@@ -233,8 +219,8 @@
                 <div class="col item-popular-container">
 
                     <div class="item-popular">
-                        <div class="row image-item-popular">
-                            
+                        <div class="row image-item-popular bg1">
+    
                         </div>
                         <div class="row description-item-popular">
                             <div class="col">
@@ -250,16 +236,34 @@
                         </div>
                     </div>
     
-                    
+                    <div class="item-popular">
+                        <div class="row image-item-popular bg3">
+    
+                        </div>
+                        <div class="row description-item-popular">
+                            <div class="col">
+                                <p class="item-popular-course">Applicable business and financial</p>
+                                <p class="item-popular-title">Advertising on social media</p>
+                                <p class="item-popular-author">Achmad Syarief,MSD,PhD</p>
+                                <div class="item-popular-bottom">
+                                    <p><span class="material-icons">grade</span>4.5</p>
+                                    <p><span class="material-icons">thumb_up_alt</span>98%</p>
+                                    <p><span class="material-icons">record_voice_over</span>4.8/5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
                     <div class="item-popular">
                         <div class="row image-item-popular">
-                            
+    
                         </div>
                         <div class="row description-item-popular">
                             <div class="col">
                                 <p class="item-popular-course">Applicable business and financial</p>
-                                <p class="item-popular-title">Sharia Financial Planning</p>
-                                <p class="item-popular-author">Dr. Muhammad Budiman</p>
+                                <p class="item-popular-title">Business planning and pitching</p>
+                                <p class="item-popular-author">Mufti Menk</p>
                                 <div class="item-popular-bottom">
                                     <p><span class="material-icons">grade</span>4.5</p>
                                     <p><span class="material-icons">thumb_up_alt</span>98%</p>
@@ -267,39 +271,17 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-    
+                    </div>    
 
-                    
                     <div class="item-popular">
-                        <div class="row image-item-popular">
-                            
-                        </div>
-                        <div class="row description-item-popular">
-                            <div class="col">
-                                <p class="item-popular-course">Applicable business and financial</p>
-                                <p class="item-popular-title">Sharia Financial Planning</p>
-                                <p class="item-popular-author">Dr. Muhammad Budiman</p>
-                                <div class="item-popular-bottom">
-                                    <p><span class="material-icons">grade</span>4.5</p>
-                                    <p><span class="material-icons">thumb_up_alt</span>98%</p>
-                                    <p><span class="material-icons">record_voice_over</span>4.8/5</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="row image-item-popular bg4">
     
-
-                    
-                    <div class="item-popular">
-                        <div class="row image-item-popular">
-                            
                         </div>
                         <div class="row description-item-popular">
                             <div class="col">
                                 <p class="item-popular-course">Applicable business and financial</p>
-                                <p class="item-popular-title">Sharia Financial Planning</p>
-                                <p class="item-popular-author">Dr. Muhammad Budiman</p>
+                                <p class="item-popular-title">Business planning and pitching</p>
+                                <p class="item-popular-author">Mufti Menk</p>
                                 <div class="item-popular-bottom">
                                     <p><span class="material-icons">grade</span>4.5</p>
                                     <p><span class="material-icons">thumb_up_alt</span>98%</p>
@@ -307,26 +289,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-    
-                    
-                    <div class="item-popular">
-                        <div class="row image-item-popular">
-                            
-                        </div>
-                        <div class="row description-item-popular">
-                            <div class="col">
-                                <p class="item-popular-course">Applicable business and financial</p>
-                                <p class="item-popular-title">Sharia Financial Planning</p>
-                                <p class="item-popular-author">Dr. Muhammad Budiman</p>
-                                <div class="item-popular-bottom">
-                                    <p><span class="material-icons">grade</span>4.5</p>
-                                    <p><span class="material-icons">thumb_up_alt</span>98%</p>
-                                    <p><span class="material-icons">record_voice_over</span>4.8/5</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div>    
     
                 </div>
             </div>
@@ -341,7 +304,7 @@
             <h2 class="pl-3" id="title-service">Services</h2>
         </div>
 
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-3 d-flex justify-content-start">
                 <p id="subtitle-service">
                     The Awesome Services Provided By Our Team
@@ -359,8 +322,8 @@
         <div class="row">
             <div class="col container-item-service">
                 <div class="item-services">
-                    <div class="row">
-                        Image here
+                    <div class="row mb-3">
+                        <img src="./assets/img/elearning.svg" height="60px" alt="" srcset="">
                     </div>
                     <div class="row">
                         <h5 class="font-weight-bold">Interactive Video</h5>
@@ -373,8 +336,8 @@
                 </div>
 
                 <div class="item-services bg-cyan">
-                    <div class="row">
-                        Image here
+                    <div class="row mb-3">
+                        <img src="./assets/img/clipboard.svg" height="60px" alt="" srcset="">
                     </div>
                     <div class="row">
                         <h5 class="font-weight-bold">Learning Module</h5>
@@ -387,8 +350,8 @@
                 </div>
 
                 <div class="item-services">
-                    <div class="row">
-                        Image here
+                    <div class="row mb-3">
+                        <img src="./assets/img/quiz.svg" height="60px" alt="" srcset="">
                     </div>
                     <div class="row">
                         <h5 class="font-weight-bold">Quiz & Assesment</h5>
@@ -401,11 +364,11 @@
                 </div>
 
                 <div class="item-services bg-cyan">
-                    <div class="row">
-                        Image here
+                    <div class="row mb-3">
+                        <img src="./assets/img/wifi.svg" height="60px" alt="" srcset="">
                     </div>
                     <div class="row">
-                        <h5 class="font-weight-bold">Forum Discussion</h5>
+                        <h5 class="font-weight-800">Forum Discussion</h5>
                     </div>
                     <div class="row">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id ligula porttitor,
@@ -427,7 +390,7 @@
     <!-- endof join section -->
 
     <!-- testimonial section -->
-    <div class="container mt-5 mb-5">
+    <div class="container testimonial-section">
         <div class="row justify-content-center">
             <h1 class="font-weight-bold color-dark-blue">What our students have to say</h1>
         </div>
@@ -437,11 +400,11 @@
                 <div class="item-testimonial">
                     <div class="row">
                         <div class="col-3 text-center">
-                            <img src="./assets/img/user-dummy.jpg" class="rounded-circle img-user" alt="User">
+                            <img src="./assets/img/user-2.jfif" class="rounded-circle img-user" alt="User">
                         </div>
                         <div class="col">
-                            <p class="nama-testimoni font-weight-bold">Ahmad Zuhair Dzulfiqor</p>
-                            <p class="jabatan-testimoni">Students</p>
+                            <p class="nama-testimoni font-weight-bold">Dian Arief Risdiyanto</p>
+                            <p class="jabatan-testimoni">Student</p>
                         </div>
                     </div>
                     <div class="row">
@@ -458,8 +421,8 @@
                             <img src="./assets/img/user-dummy.jpg" class="rounded-circle img-user" alt="User">
                         </div>
                         <div class="col">
-                            <p class="nama-testimoni font-weight-bold">Ahmad Zuhair Dzulfiqor</p>
-                            <p class="jabatan-testimoni">Students</p>
+                            <p class="nama-testimoni font-weight-bold">Miftakhul Firdaus</p>
+                            <p class="jabatan-testimoni">Student</p>
                         </div>
                     </div>
                     <div class="row">
@@ -473,11 +436,11 @@
                 <div class="item-testimonial">
                     <div class="row">
                         <div class="col-3 text-center">
-                            <img src="./assets/img/user-dummy.jpg" class="rounded-circle img-user" alt="User">
+                            <img src="./assets/img/dummy-user.jfif" class="rounded-circle img-user" alt="User">
                         </div>
                         <div class="col">
                             <p class="nama-testimoni font-weight-bold">Ahmad Zuhair Dzulfiqor</p>
-                            <p class="jabatan-testimoni">Students</p>
+                            <p class="jabatan-testimoni">Student</p>
                         </div>
                     </div>
                     <div class="row">
@@ -508,7 +471,7 @@
 
 
     <!-- footer -->
-    <div class="container">
+    <div class="container footer">
         <!-- Footer -->
         <footer class="page-footer font-small blue pt-4">
 
@@ -614,7 +577,7 @@
                         <h5 class="text-uppercase font-weight-bold mb-3">Subscribe</h5>
                         <form class="form-inline">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search anything..."
+                                <input type="text" class="form-control" placeholder="Your email here..."
                                     aria-label="Enter your email" aria-describedby="basic-addon2">
                                 <span class="material-icons icon-search">mail</span>
                             </div>

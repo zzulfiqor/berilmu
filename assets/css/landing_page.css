@@ -2,6 +2,14 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+.container{
+    width:100%;
+    padding-right:5px;
+    padding-left:5px;
+    margin-right:auto;
+    margin-left:auto
+}
+
 .color-dark-blue{
     color:#273555 ;
 }
@@ -21,22 +29,27 @@ body{
 
 
 /* jumbotron */
-.jumbotron{
+.jumbotron-main{
     border-radius: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 60px;
     padding-right: 40px;
+    height: 470px;
     background-color: #f9f3f0;
 }
 
-.jumbotron h2{
-    font-weight: 900;
+.jumbotron-main p{
+    font-weight: bolder;
+    font-size: 65px;
+    line-height: 70px;
     color: #273555;
 }
 
-.jumbotron h3{
+.jumbotron-main h4{
     color: #aeaeae;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
 }
 
 /* jumbotron video (right side) */
@@ -44,11 +57,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/video_thumbnail.jpg);
+    background: url(../img/video_thumbnail.png);
     background-position: center;
     background-size: cover;
-    height: 350px;
-    width: 300px;
+    height: 370px;
+    width: 320px;
     cursor: pointer;
     border-radius: 25px;
 }
@@ -67,6 +80,7 @@ body{
     width: 20vw !important;
     background-color: #f9f3f0 !important;
     border : none;
+    font-family: 'Poppins', sans-serif;
     padding-right: 40px !important;
 }
 
@@ -79,6 +93,8 @@ body{
     border-radius: 20px 0 20px 20px;
     border: none;
     height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
     width: 25vw !important;
 }
 
@@ -147,6 +163,8 @@ body{
 #popular-course-subtitle{
     color: #888888;
     font-size: larger;
+    font-family: 'Poppins', sans-serif;
+     
 }
 
 /* item popular course */
@@ -157,7 +175,7 @@ body{
 
 /* height of scrollbar */
 .item-popular-container::-webkit-scrollbar{
-    height: 4px;
+    height: 3px;
 }
 
 /* scrollbar style */
@@ -186,7 +204,7 @@ body{
     height: 325px;
     background-color: #dbd2d2   ;
     border-radius: 10px;
-    margin : 20px 10px 20px 10px;
+    margin : 20px 22px 20px 22px;
     -webkit-box-shadow: 0px 0px 24px -10px rgba(0,0,0,0.7);
     -moz-box-shadow: 0px 0px 24px -10px rgba(0,0,0,0.7);
     box-shadow: 0px 0px 24px -10px rgba(0,0,0,0.7);
@@ -208,12 +226,15 @@ body{
 
 /* item popular course group */
 .item-popular-course{
-    font-size: 8pt;
+    font-size: 8.2pt;
+    color: #85bdc5;
+    font-family: poppins;
 }
 
 /* item popular title */
 .item-popular-title{
     font-size: 12pt;
+    color: #273555;
     transform: translateY(-15px);
     margin-bottom: 30px;
     font-weight: bold;
@@ -221,8 +242,9 @@ body{
 
 /* item popular author */
 .item-popular-author{
-    font-size: 8pt;
-}
+    font-size: 8.2pt;
+    color: #85bdc5;
+    font-family: poppins;}
 
 /* bottom section item popular */
 .item-popular-bottom{
@@ -260,12 +282,30 @@ body{
     font-weight: 400;
     color: #273555;
     line-height: 30px;
+    font-family: poppins;
 }
+
+/* Student Viewing */
+.jumbotron-viewing{
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 40px;
+    height: 550px;
+    background-color: #f9f3f0;
+}
+
+.jumbotron-viewing h2{
+    color: #273555;
+}
+
 
 /* text section */
 #text-section{
     font-size: 15pt;
     font-weight: 500;
+    font-family: poppins;
 }
 
 /* item service container styling */
@@ -285,6 +325,14 @@ body{
     background-color: #f4edea;
     border-radius: 15px;
     padding: 40px;
+}
+
+.item-services p{
+    margin-top: 5px;
+    font-family: poppins;
+    font-size: 14px;
+    color: #94634e;
+    line-height: 18px;
 }
 
 /* bg cyan */
@@ -335,6 +383,8 @@ body{
 }
 
 /* testimonial section */
+
+
 #container-testimonial{
     overflow: auto;
     display: flex;
@@ -343,7 +393,7 @@ body{
 
 /* height of scrollbar */
 #container-testimonial::-webkit-scrollbar{
-    height: 4px;
+    height: 3px;
 }
 
 /* scrollbar style */
@@ -366,11 +416,12 @@ body{
 
 /* item testimonial */
 .item-testimonial{
+    position: relative;
     padding: 20px;
-    min-width: 450px;
-    max-width: 450px;
+    min-width: 500px;
+    max-width: 500px;
     height: 250px;
-    margin: 15px 10px 5px 15px;
+    margin: 15px 30px 15px 30px;
     border-radius: 15px;
     background-color: whitesmoke;
     -webkit-box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
@@ -378,14 +429,25 @@ body{
     box-shadow: -48px 16px 39px -40px rgba(0,0,0,0.21);
 }
 
+.item-testimonial::after{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    content: url(../img/quote.png);
+}
+
+
 .nama-testimoni{
-    font-size: 16pt;
+    font-size: 14pt;
     margin-top: 5px;
+    color: #33c1b7;
 }
 
 .jabatan-testimoni{
-    font-size: 16pt;
+    font-size: 14pt;
     transform: translateY(-15px);
+    font-family: Poppins;
+    font-weight: 500;
 }
 
 /* image user testimonial */
@@ -397,7 +459,8 @@ body{
 /* testimonial content */
 .item-testimonial-content{
     font-size: 14pt;
-    transform: translateY(-10px);
+    font-family: Poppins;
+    transform: translateY(-5px);
 }
 
 /* section waqf */
@@ -473,6 +536,35 @@ footer span{
    margin-top: 5px;
 }
 
+.bg1{
+    background: url(../img/bg1.jpg);
+    background-size: cover;
+}
+
+.bg2{
+    background: url(../img/bg2.jpg);
+    background-size: cover;
+}
+
+.bg3{
+    background: url(../img/bg3.jpg);
+    background-size: cover;
+}
+
+.bg4{
+    background: url(../img/bg4.jpg);
+    background-size: cover;
+}
+
+.footer{
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.testimonial-section{
+    margin-top: 70px ;
+    margin-bottom: 100px;
+}
 
 /* for responsive web purpose */
 @media only screen and (max-width: 450px) {
